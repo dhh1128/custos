@@ -62,3 +62,13 @@ Fix: drop the adjective everywhere, keep the SHALL that makes it true.
 CAUTION for whoever runs this — do NOT blanket-replace 'typed'. It has a second, load-bearing use as a VERB meaning 'its type is determined by': ':1619 the bundle is typed by the law head', and :599, :782, :1421, :1583. That usage is a real claim and must stay. Only the decorative adjective goes.
 
 Unaudited neighbours of the same shape, flagged not concluded: 'typed evidence' (:1541, :2521, :2537, :3832), 'typed seal' (:1995, :2018, :3215, :3842), 'typed slot' (:1958). Each needs the same test — is there an untyped counterpart in the document? — before anyone touches it. Do not assume they pattern with requirement set.
+- 2026-08-26T18:54Z 'requirement space' vs 'requirement set' — UNLIKE the other items on this tick, this pair is NOT sloppy. All 13 sites checked in context; the distinction is real and held consistently.
+
+  space = the full set of checks the law commits for a question, fixed before appraisal. :1409, :1620, :1741, :1749 ('everything that could defeat a question is in that question's committed requirement space before appraisal begins'), :1757.
+  set = the outstanding items a pending finding carries. :1434, :1522 ('the finding names what is missing'), :1647, :1667, :1668, :1966 ('enumerates exactly the unfilled slots'), :2409, :3022.
+
+Fixed universe vs what is still owed. Do NOT collapse them to 'requirements' — issue 82 rule 1 turns on exactly this difference: a law change makes the SPACE unreachable, it does not make the SET longer.
+
+The legibility fix is smaller than a merge. 'Committed' already marks the distinction in four of the five space sites, so 'space' rides along on a marker already doing the work. Proposed: 'the committed requirements' and 'the outstanding requirements'. Distinction kept, coinage dropped.
+
+This entry is also the counter-example that keeps the pass honest — the pass is not de-jargoning by reflex. Three items on this tick were unearned ('species', decorative 'typed', 'appraisal'); one was a correctness bug ('discharge'); this one is a real distinction wearing a needlessly mathematical name; and one flagged item ('appraisal' as undefined) was retracted outright. Test each term, do not sweep.
