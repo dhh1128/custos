@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Corpus character discipline (whole corpus)
+        run: python3 tools/check-corpus-characters.py
+
       - name: Kernel and edition digest verification
         run: python3 tools/verify_kernel.py
 
