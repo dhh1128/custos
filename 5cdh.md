@@ -26,3 +26,14 @@ Two more from the same pass:
   'operational processor' (:1558, :1562, ratified) is opaque enough that the spec glosses its own ratified text at :1569-1573 — 'a processor is whatever machinery retains work between appraisals.' A parenthetical translating a ratified paragraph is the strongest evidence in the document that this pass is needed. Plain reading: the part of an implementation that holds work it cannot finish yet (KERI: escrow).
 
   'appraisal' (30 uses) is a fair word for a real concept and should probably stay — but the actor is called an 'evaluator', so the act should likely be 'evaluation'. Appraisal/evaluator is a mismatched pair. Also: section 5 Definitions uses 'appraisal' inside the definitions of law head and lens without ever defining appraisal itself.
+- 2026-08-26T18:44Z CORRECTION to the previous note's 'appraisal' item — that advice was wrong, do not act on it.
+
+I wrote that 'appraisal' is undefined in section 5 and that it should probably be renamed to 'evaluation' for consistency with 'evaluator'. Both claims are wrong.
+
+Appraisal IS defined, at :1162-1177, inside the bolded entry 'Evaluator; constructor': "'Appraisal' names the activity and the layer — the fold-plane act of computing findings from committed evidence... appraisal is the adjudicating domain's judging half, never its acting half."
+
+Evaluator is the ROLE; appraisal is the ACTIVITY. The spec separates them deliberately and says so in the same entry. Renaming appraisal to evaluation would collapse a distinction the document draws on purpose — the exact failure mode this tick exists to prevent.
+
+The real finding is smaller: 'Appraisal' has no bolded entry of its own, so it cannot be found by scanning section 5's term list, and a reader who scans rather than reads the 'Evaluator; constructor' entry end to end will conclude it is undefined. That is what happened to me. Fix is to give it its own entry, not to rename it.
+
+Method lesson for whoever runs this pass, worth more than the item: a term can be defined inside another term's entry. Scanning bolded headings is not sufficient evidence that something is undefined — grep the prose before calling anything unearned jargon. 'requirement space', 'at birth' and 'ground-evaporation' from the earlier note were flagged by the same scan-based method and MUST be re-checked the same way before anyone acts on them.
