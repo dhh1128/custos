@@ -83,35 +83,7 @@ Applied to the ratified sites:
 
 That last row is Utah's bill header, which pins both: *AMENDS: 36-12-12, as last amended by Chapter 55, Laws of Utah 1993.* The form is a century old and it is the payload the **superseded** defeater class has been missing.
 
-## Repair 4 — carriage in this document's own bytes
-
-The locator has to be written somewhere, and this document's bytes are its law, so any markup admitted here widens the grammar a fold must parse to find a clause.
-
-> A block's locator is written as a bracketed token at the start of the block, followed by a single space. The token is text, not markup: locating a block is a match on line start.
-
-Which reads, taking §8.3's required payloads as they stand:
-
-```
-[8.3.5] Required payloads.
-
-[8.3.5.1] A defeated finding SHALL carry its defeater class and its citation: the violated or superseding clause's identifier, or, for cryptographic defeat, the identifier of the failed verification subject.
-
-[8.3.5.2] A pending finding SHALL carry its typed requirement set: deduplicated elements, each carrying requirement kind, subject identifier, the list of citing clauses, and its discharge species, in the canonical four-field total order.
-
-[8.3.5.3] A self-convicted finding SHALL carry the identifier of the canonical proof package for the contradictory pair.
-```
-
-Three mechanical consequences, and they are one act because doing them separately invalidates the corpus's citations twice.
-
-**One line per block.** The ratified text wraps at eighty columns, so a line number names a sentence fragment. One line per block makes a line number a semantic unit and a changed block a one-line diff. Roughly 370 blocks against 3,940 lines today.
-
-**Normative text drops markdown bullets.** Every enumerated normative item becomes a locator-labelled block, which is what `(a)`, `(b)`, `(c)` are in a statute — legal drafting has no bullets, and the locator is the enumeration. This is the change that visibly alters how the document reads.
-
-**Term definitions get a defining instance.** `<dfn>` marks it — HTML5's element for exactly that, where `<var>` means a mathematical variable and `<cite>` means the title of a work. A term's address is then the locator of the block its `<dfn>` sits in, the term index becomes derivable rather than hand-maintained, and a term used but never defined becomes mechanically detectable.
-
-Rendered anchors are generated downstream and are not in the bytes. The asymmetry is load-bearing: a generator *upstream* of ratified bytes would put an uncommitted tool inside the law's production, while the rendered HTML is not the law and its transform can be replaced or discarded freely. It also has to mangle the id — `id="8.3.5.2"` is legal HTML5 but in CSS and `querySelector` the dots are class separators — and that escaping is a rendering concern that should not reach the law.
-
-## Repair 5 — what a domain owes
+## Repair 4 — what a domain owes
 
 **At §15 or §18**, wherever domain obligations sit. Custos fixes this grammar for itself; a domain conforms by satisfying the properties, not by copying the punctuation.
 
@@ -123,13 +95,13 @@ Properties are interop and bind; spelling is style and does not. A domain whose 
 
 **A ruling is owed.** This seed inverts the usual order — it was reached by design discussion rather than by a gauntlet pass. Finding #85 was filed afterwards, against the three spans named in *The defect* rather than against the proposal, but no ruling has executed and one is needed before this can enter.
 
-**Repairs 1–3 cohere; 4 and 5 could be severed.** Repairs 1–3 are one normative object and should not be split — a locator with no pinning rule does not travel, and a pinning rule with no citation discipline does not tell an implementer what to do. Repair 4 is mechanical and editorial, and could be a separate act of the same cycle; the argument for keeping it here is that reflowing and labelling the corpus invalidates existing line citations exactly once instead of twice. Repair 5 depends on 1 and adds nothing without it.
+**What this seed no longer carries, and where it went.** An earlier draft bundled the carriage work in here. It is out, in three pieces. One line per block is finding #90 and its own seed, because a reflow is provable where this scheme is argued. The locator's own carriage — the bracketed token, and dropping markdown bullets from normative text so the locator carries the enumeration — is offered separately and held, because assigning permanent names to strata the clean-root decision may excise pays the whole cost of permanence for none of the benefit. `<dfn>` for defining instances is withdrawn until a term test exists: marking up whatever currently looks like a term would canonize the unearned coinages and make them harder to retire. What remains here is one normative object and should not be split further — a locator with no pinning rule does not travel, and a pinning rule with no citation discipline does not tell an implementer what to do.
 
 **Two consequences this seed raises and does not settle.** First, §8.3's canonical selection (L1767–1769) currently takes a lexicographic minimum over a digest, which is deterministic but picks an arbitrary member of the available defeats; ordering by locator instead would select the earliest or most specific provision, which is a rule defensible to the party it defeats. That is a change of behaviour, not of notation, and it wants its own ruling. Second, the subcode at L1776–1779 is a clause-internal enumeration that locators may subsume entirely — if a clause's parts have locators, the subcode is a locator suffix, and the "where the clause defines none" branch disappears.
 
 **§7 gains something for free.** The aggregate Constitution's per-clause sub-blocks are SAID-addressed (L1483–1485). Carrying the locator inside each sub-block upgrades what clause-selective disclosure proves: today revealing a clause against the aggregate "proves only that the clause was committed somewhere, never its membership in the law in force" (L1490–1492), and the aggregate fixes membership while the locator fixes position. A clause disclosed alone is then self-resolving, which is also why relative citation was considered and rejected — resolving a relative form requires structure the disclosure posture does not supply.
 
-**Cost, stated plainly.** The reflow invalidates every existing line citation into the ratified 4.2 at once. Measured 2026-08-26 across this repo outside `.ignored/`: 606 explicitly-formed line citations — 487 of the `L####` form, 119 of the `4.x:####` form — across 47 files, plus bare numeric ranges not separable from non-line figures by pattern. Citations into ratified 4.2 remain valid against ratified 4.2, which is never edited; what breaks is their usefulness as pointers into the successor.
+**This seed costs no citations.** Nothing here reflows or relabels anything, so no existing line citation is disturbed by it. That cost belongs to #90's seed, which states it.
 
 ## Record
 
@@ -139,8 +111,9 @@ Properties are interop and bind; spelling is style and does not. A domain whose 
 | Executed under | No numbered ruling; one is owed (a §5 definition and a §4 reading rule are ruling-grade) |
 | Finding discharged | #85 (law has one identity where three ratified spans need two) |
 | Spans repaired | §5 law ladder L1195–1212 (addition); §4 reading rule 2 L993+ (extension); §8.3 payloads L1641–1658; §8.3 canonical selection L1767–1779; §10 sealed set L2041–2045; §10 conviction family L2049–2052 |
+| Separated out | One line per block → #90 and its own seed; locator carriage → offered separately and held; `<dfn>` → withdrawn pending a term test |
 | External citations verified | 2026-08-26 — Akoma Ntoso Naming Convention v1.0, OASIS Standard 2019-02-21, `https://docs.oasis-open.org/legaldocml/akn-nc/v1.0/akn-nc-v1.0.html`; Utah Code structure and amendatory bill form against the `bakobo/utah-id-law` corpus |
 | Adjacent seed | Covenant seal carriage (finding #80) — repairs where the seal's kind is written; this repairs how its clause set is named. Neither depends on the other |
-| Charter input, not designed here | The rendered-anchor transform and its id mangling; the term index derived from `<dfn>` |
+| Charter input, not designed here | The rendered-anchor transform and its id mangling |
 | Re-ruling | No |
 | Ratified bytes altered | None |
