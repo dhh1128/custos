@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Block-line discipline (4.3 and later spec bytes)
+        run: python3 tools/check-block-lines.py
+
       - name: Kernel and edition digest verification
         run: python3 tools/verify_kernel.py
 
