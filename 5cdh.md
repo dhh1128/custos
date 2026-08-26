@@ -72,3 +72,14 @@ Fixed universe vs what is still owed. Do NOT collapse them to 'requirements' —
 The legibility fix is smaller than a merge. 'Committed' already marks the distinction in four of the five space sites, so 'space' rides along on a marker already doing the work. Proposed: 'the committed requirements' and 'the outstanding requirements'. Distinction kept, coinage dropped.
 
 This entry is also the counter-example that keeps the pass honest — the pass is not de-jargoning by reflex. Three items on this tick were unearned ('species', decorative 'typed', 'appraisal'); one was a correctness bug ('discharge'); this one is a real distinction wearing a needlessly mathematical name; and one flagged item ('appraisal' as undefined) was retracted outright. Test each term, do not sweep.
+- 2026-08-26T18:56Z REVISION to the previous note's proposed wording. Daniel rejected 'outstanding requirements'; settled on 'unsatisfied requirements'.
+
+'Outstanding' was wrong, and worse than merely bland: it connotes a live obligation still collectible. Issue 82 rule 1 is precisely the case where the requirements can NEVER be met (the law changed, the cure path closed), so 'outstanding' misdescribes the motivating case.
+
+'Unsatisfied' is the choice, and it is promotion rather than coinage — already the spec's own word for this idea at :1894 ('An unsatisfied component discharges as pending inside the product'), :1966 ('An unsatisfied operator group is not a defect and not a defeat'), :2410. It also matches utina, whose method is group.satisfied(), and the dossier specification, where thresholds are satisfied. Cross-artifact consistency for free.
+
+'Pending requirements' was considered and rejected: 'pending' is already a finding value AND already qualifies 'species' (the kinds of pending). A pending finding carrying pending requirements each having a pending species is three jobs for one word inside a dozen lines.
+
+'Unmet' also already exists in the spec (:1389, one use) but is less established than 'unsatisfied'.
+
+So the pair becomes: 'the committed requirements' (was: requirement space) and 'the unsatisfied requirements' (was: requirement set).
