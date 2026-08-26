@@ -1,6 +1,6 @@
 # Custos 4.3 seed — the locator, a second identity for law
 
-> DRAFT — repair seed for the 4.3 cycle. Unpinned until declared final. Enters the successor by succession; the ratified Custos 4.2 bytes (sha256 68cc5c9b7164b33dffcf7b705a0d1301fe108c647d35638fec61d52d29b2775a) are untouched by this file. **Discharges no numbered finding, and one is owed** — the finding below is not yet filed, and this file is its input rather than its discharge. **Executed under no numbered ruling**, and one is owed: the repair adds a definition to §5 and a reading rule to §4, which is ruling-grade. Offered to the drafting authority, which owns the wording.
+> DRAFT — repair seed for the 4.3 cycle. Unpinned until declared final. Enters the successor by succession; the ratified Custos 4.2 bytes (sha256 68cc5c9b7164b33dffcf7b705a0d1301fe108c647d35638fec61d52d29b2775a) are untouched by this file. Discharges finding #85 only. **Executed under no numbered ruling**, and one is owed: the repair adds a definition to §5 and a reading rule to §4, which is ruling-grade. Offered to the drafting authority, which owns the wording.
 >
 > Adjacent, not conflicting: the covenant seal carriage seed (finding #80) repairs *where the seal's kind is written* and states that what the seal irreducibly does — name the clause set a successor is answerable to — is untouched. This seed repairs *how that clause set is named*. Neither depends on the other; both land in §10.
 
@@ -121,7 +121,7 @@ Properties are interop and bind; spelling is style and does not. A domain whose 
 
 ## Notes for the drafting authority
 
-**The finding is unfiled and the ruling is owed.** This seed inverts the usual order — it was reached by design discussion rather than by a gauntlet pass, so there is no finding number to discharge and no ruling to execute under. Both are owed before it can enter, and the finding should be filed against the three spans named in *The defect* rather than against the proposal.
+**A ruling is owed.** This seed inverts the usual order — it was reached by design discussion rather than by a gauntlet pass. Finding #85 was filed afterwards, against the three spans named in *The defect* rather than against the proposal, but no ruling has executed and one is needed before this can enter.
 
 **Repairs 1–3 cohere; 4 and 5 could be severed.** Repairs 1–3 are one normative object and should not be split — a locator with no pinning rule does not travel, and a pinning rule with no citation discipline does not tell an implementer what to do. Repair 4 is mechanical and editorial, and could be a separate act of the same cycle; the argument for keeping it here is that reflowing and labelling the corpus invalidates existing line citations exactly once instead of twice. Repair 5 depends on 1 and adds nothing without it.
 
@@ -137,7 +137,7 @@ Properties are interop and bind; spelling is style and does not. A domain whose 
 |---|---|
 | Predecessor edition | Custos 4.2, sha256 `68cc5c9b7164b33dffcf7b705a0d1301fe108c647d35638fec61d52d29b2775a` |
 | Executed under | No numbered ruling; one is owed (a §5 definition and a §4 reading rule are ruling-grade) |
-| Finding discharged | None; the finding is unfiled and owed |
+| Finding discharged | #85 (law has one identity where three ratified spans need two) |
 | Spans repaired | §5 law ladder L1195–1212 (addition); §4 reading rule 2 L993+ (extension); §8.3 payloads L1641–1658; §8.3 canonical selection L1767–1779; §10 sealed set L2041–2045; §10 conviction family L2049–2052 |
 | External citations verified | 2026-08-26 — Akoma Ntoso Naming Convention v1.0, OASIS Standard 2019-02-21, `https://docs.oasis-open.org/legaldocml/akn-nc/v1.0/akn-nc-v1.0.html`; Utah Code structure and amendatory bill form against the `bakobo/utah-id-law` corpus |
 | Adjacent seed | Covenant seal carriage (finding #80) — repairs where the seal's kind is written; this repairs how its clause set is named. Neither depends on the other |
