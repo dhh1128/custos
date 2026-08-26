@@ -37,3 +37,14 @@ Evaluator is the ROLE; appraisal is the ACTIVITY. The spec separates them delibe
 The real finding is smaller: 'Appraisal' has no bolded entry of its own, so it cannot be found by scanning section 5's term list, and a reader who scans rather than reads the 'Evaluator; constructor' entry end to end will conclude it is undefined. That is what happened to me. Fix is to give it its own entry, not to rename it.
 
 Method lesson for whoever runs this pass, worth more than the item: a term can be defined inside another term's entry. Scanning bolded headings is not sufficient evidence that something is undefined — grep the prose before calling anything unearned jargon. 'requirement space', 'at birth' and 'ground-evaporation' from the earlier note were flagged by the same scan-based method and MUST be re-checked the same way before anyone acts on them.
+- 2026-08-26T18:47Z 'Appraisal' should become 'evaluation' — this one is checked, unlike the retracted item above.
+
+Section 1.3 makes 'evaluate' one of the two core verbs of the whole model. 'Evaluator' and 'evaluation' are then ordinary English morphology off that verb and need no coinage. 'Appraisal' breaks the chain for no gain:
+
+  - No name collision blocks it. The 'evaluation seal' at :1252 is the DEFERRED fourth seal kind, is 'a committed verdict' (an artifact, not an act), and the entry says 'no construct in this document uses it'. The name is free — and 'evaluation seal' actually reads as a seal over an evaluation, which presupposes the proposed usage.
+  - The layer claim is empty. The section 5 entry says appraisal 'names the activity and the layer', but the layer it points at is the fold plane, which is already called the fold plane. Appraisal is only what happens there.
+  - The one real distinction available is not held. If 'appraisal' meant the domain's judging OFFICE and 'evaluation' one instance, the pair would earn its keep. But 'appraisal position' (:1150, :1614) is a coordinate of a single act — instance grain. The spec uses the word at both grains, so whichever reading you take, some usage is wrong.
+
+Related, and separable: the section 5 entry titled 'Evaluator; constructor' (:1162-1177) does not really define two words — it defines a BOUNDARY (constructor vs evaluator, the KERI controller/validator lineage, refuse-don't-legislate). That content is load-bearing and should stay; only the framing misleads. Retitle to name the separation, and give 'evaluation' its own short entry.
+
+Scope note: ~30 uses of appraisal/appraise, and the phrase 'appraisal position' is a named member of the triple, so this rename touches the spec's most-cited vocabulary and every downstream citation of it (utina, review corpus). Not a free edit — but not a ratified-text edit either, unlike 'species' and the sense-2 'discharge'.
