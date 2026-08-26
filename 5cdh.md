@@ -48,3 +48,17 @@ Section 1.3 makes 'evaluate' one of the two core verbs of the whole model. 'Eval
 Related, and separable: the section 5 entry titled 'Evaluator; constructor' (:1162-1177) does not really define two words — it defines a BOUNDARY (constructor vs evaluator, the KERI controller/validator lineage, refuse-don't-legislate). That content is load-bearing and should stay; only the framing misleads. Retitle to name the separation, and give 'evaluation' its own short entry.
 
 Scope note: ~30 uses of appraisal/appraise, and the phrase 'appraisal position' is a named member of the triple, so this rename touches the spec's most-cited vocabulary and every downstream citation of it (utina, review corpus). Not a free edit — but not a ratified-text edit either, unlike 'species' and the sense-2 'discharge'.
+- 2026-08-26T18:51Z 'typed requirement set' — the adjective is redundant AND applied inconsistently.
+
+:1647 SHALLs the four fields (requirement kind, subject identifier, citing clauses, discharge species), so a conforming requirement set cannot be untyped. There is no untyped variety anywhere in the document. The adjective distinguishes nothing.
+
+The inconsistency is the sharper problem. Roughly half and half:
+  typed: :1434, :1524, :1647, :3022
+  bare:  :1667, :1668, :1968, :2411
+The SHALL at :1647 says 'typed'; the transition table at :1667-1668, twenty lines later, says bare. Same object, same section, two names — which invites a reader to think the bare ones are a different thing.
+
+Fix: drop the adjective everywhere, keep the SHALL that makes it true.
+
+CAUTION for whoever runs this — do NOT blanket-replace 'typed'. It has a second, load-bearing use as a VERB meaning 'its type is determined by': ':1619 the bundle is typed by the law head', and :599, :782, :1421, :1583. That usage is a real claim and must stay. Only the decorative adjective goes.
+
+Unaudited neighbours of the same shape, flagged not concluded: 'typed evidence' (:1541, :2521, :2537, :3832), 'typed seal' (:1995, :2018, :3215, :3842), 'typed slot' (:1958). Each needs the same test — is there an untyped counterpart in the document? — before anyone touches it. Do not assume they pattern with requirement set.
