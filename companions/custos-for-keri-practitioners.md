@@ -36,10 +36,10 @@ request. Prose law is read; committed law is replayed.
 Blockchains supply the two things prose lacks — a total order over
 rule changes and the acts they judge, and a completeness surface,
 so a verifier knows it holds the whole rule set rather than the
-fragment someone showed it. The price is sovereignty: governance
-hostage to a validator set the domain does not control, block time
-displacing the domain's own first-seen coordinate. A domain escapes
-its regulator's mandate and acquires its validators'.
+fragment someone showed it. But governance then sits hostage to a
+validator set the domain does not control, and block time displaces
+the domain's own first-seen coordinate. A domain escapes its
+regulator's mandate and acquires its validators'.
 
 Underneath both failures sits one asymmetry. Integrity is
 self-certifying; authority is not. A SAID is its own proof, but a
@@ -94,7 +94,8 @@ mention the identifier; a reserved sentinel resolves at
 verification, and that exclusion is what closes the cycle. A domain
 may instead incept bare and anchor its law afterward: adopted
 grade, lawful and confessedly weaker. GLEIF's root identifier is
-adopted grade, exactly.
+adopted grade, exactly — the reading is worked out in the
+[GLEIF EGF mapping](gleif-egf-mapping.md), not in the kernel.
 
 ## Seven primitives
 
@@ -162,8 +163,11 @@ def enact(act, signing_keys) -> Event:
     committed event and append it to a log. It judges nothing."""
 ```
 
-Two evaluations of the same triple return byte-identical findings.
-That is the chess replayer's test, applied to governance.
+Two evaluations of the same triple return equal findings — equal
+under one conformance predicate, which is semantic full-payload
+equality today and byte identity by construction the moment a
+carriage encoding ratifies. That is the chess replayer's test,
+applied to governance.
 
 ## One turn of the loop
 
@@ -222,7 +226,9 @@ an annotation on it. A bare verdict is not a member of the type.
 - self-convicted: the subject's own committed bytes contradict each
   other. Its ground is the proof — the contradictory pair. This one
   is terminal. The question is poisoned, and no later evidence
-  rehabilitates it.
+  rehabilitates it. At the key tier, whether a pair bears is decided
+  by KERI's own superseding-recovery rules, and a lawfully
+  superseding event reconciles rather than convicts.
 
 The ground requirement is the load-bearing decision of the whole
 design. Because every finding carries its ground, every finding is
@@ -239,7 +245,9 @@ constructor wearing the wrong name.
 
 Transitions run only toward evidence growth. No backward edge
 exists, so affirmed never becomes defeated; fresh defeating
-evidence yields a new finding at a new position.
+evidence yields a new finding at a new position. Affirmed and
+defeated are final except for one event: a contradictory pair
+bearing on the same question moves either to self-convicted.
 
 ## Standing, and consequence that checks out
 
@@ -290,13 +298,13 @@ expensive to fake.
 
 ## What it refuses to claim
 
-The most instructive section of Custos 4.1 draws the boundary of
-its own design. Six commitments are fixed; the interior they bound
-— evaluator scheduling, seating procedure, constructor architecture
-— is confessed undesigned. Every executable claim was exercised
-against one implementation at one pinned checkout, and agreement
-between independent implementations is an open debt stated on the
-record.
+The most instructive section of Custos 4.2 draws the boundary of
+its own design. Seven commitments are fixed; the interior they
+bound — evaluator scheduling, seating procedure, constructor
+architecture — is confessed undesigned. Every executable claim was
+exercised against one implementation at one pinned checkout, and
+agreement between independent implementations is an open debt
+stated on the record.
 
 The repository holding the text says the same of itself: it is a
 projection, never an authority, because which bytes are law is
