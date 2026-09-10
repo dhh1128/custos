@@ -83,3 +83,4 @@ This entry is also the counter-example that keeps the pass honest — the pass i
 'Unmet' also already exists in the spec (:1389, one use) but is less established than 'unsatisfied'.
 
 So the pair becomes: 'the committed requirements' (was: requirement space) and 'the unsatisfied requirements' (was: requirement set).
+- 2026-09-10T18:22Z This is track C of the demo-2 plan, and it now has a shape that breaks no promise. The deliverable is a PROJECTION, not a merge: a draft reading edition that says in its first paragraph that it is not ratified bytes — the repo's own framing from issue 12. That matters because Daniel promised Nicholas he would not merge substantive changes resting on subjective tests of desirability, and readability is exactly such a test. Broken into C1-C5; see ~/code/bakobo/utina/.ignored/demo-2-build-plan.md
